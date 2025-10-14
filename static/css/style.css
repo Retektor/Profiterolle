@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    color: #00064D;
+}
+
+body {
+    font-family: Inter-Regular;
+}
+
+a {
+    color: #00064D;
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-Medium;
+    src: url(../fonts/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(../fonts/Inter_18pt-SemiBold.ttf);
+}
+
+header{
+    height: 100px;
+    background-color: #F8C867;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 150px;
+    font-family: Inter-Medium;
+}
+
+.header__logo {
+    font-size: 1.75rem;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.header__menu nav ul{
+    font-size: 1.25rem;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.header__menu nav ul a{
+    text-decoration: none;
+}
+
+.header__menu nav ul a:hover{
+    color: #604239;
+    text-decoration: underline;
+}
+
+.intro{
+    background-color: #F8C867;
+    padding: 150px 150px 329px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__text {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.intro__text div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro__text h1{
+    font-family: Inter-SemiBold;
+    font-size: 4rem;
+}
+
+.intro__text h2{
+    font-family: Inter-Medium;
+    font-size: 2.25rem;
+}
+
+.intro__text p{
+    font-family: Inter-Regular;
+    font-size: 1.5rem;
+}
