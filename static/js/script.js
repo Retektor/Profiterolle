@@ -7,6 +7,6 @@ $(document).ready(function(){
         slidesToShow: 3,      // Number of slides to show
         slidesToScroll: 1,    // Number of slides to scroll
         autoplay: true,       // Auto-play
-        autoplaySpeed: 2500,  // Auto-play speed
+        autoplaySpeed: 3000,  // Auto-play speed
     });
 });
