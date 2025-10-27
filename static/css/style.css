@@ -38,16 +38,21 @@ a {
 }
 
 
+@font-face {
+    font-family: VIPROMAN-Regular;
+    src: url(../fonts/VIPRoman-Regular.otf);
+}
+
+
 
 /* Header */
 
 header{
-    height: 100px;
     background-color: #FBDC9C;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 150px;
+    padding: 2vh 7.5vw 2vh 7.5vw;
     font-family: Inter-Medium;
 }
 
@@ -59,6 +64,8 @@ header{
     align-items: center;
     text-decoration: none;
     transition-duration: 0.25s;
+    font-family: VIPROMAN-Regular;
+    font-weight: bolder;
 }
 
 
@@ -68,8 +75,8 @@ header{
 
 
 .header__logo a img{
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 }
 
 
@@ -77,7 +84,7 @@ header{
 .header__menu nav ul{
     font-size: 1.25rem;
     display: flex;
-    gap: 50px;
+    gap: 2.5vw;
     list-style: none;
 }
 
@@ -97,7 +104,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    gap: 250px;
+    gap: 25vh;
 }
 
 
@@ -106,14 +113,14 @@ main{
 
 .intro{
     background-image: url(../img/intro_bg.svg);
-    padding: 150px 150px 329px 150px;
+    padding: 15vh 7.5vw 30vh 7.5vw;
     display: flex;
     justify-content: space-between;
 }
 
 
 .intro__text {
-    width: 530px;
+    width: calc(100% - 15vw);
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -129,7 +136,7 @@ main{
 
 .intro__text h1{
     font-family: Inter-SemiBold;
-    font-size: 4rem;
+    font-size: clamp(1rem, 10vw, 4rem);
 }
 
 
@@ -146,8 +153,7 @@ main{
 
 
 .intro__image img {
-    width: 830px;
-    height: 490px
+    width: 43vw;
 }
 
 /* Products */
@@ -189,6 +195,7 @@ main{
 
 .products_carousel div img {
     width: 523px;
+    border-radius: 10px;
 }
 
 
@@ -205,19 +212,34 @@ main{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
+}
+
+
+.about h1{
+    padding-bottom: 25px;
+}
+
+
+.line-top {
+    height: 0.75vh;
+    background-color: #F8C867;
+}
+
+
+.line-bottom {
+    height: 0.75vh;
+    background-color: #FBDC9C;
 }
 
 
 .about__cards {
     display: flex;
-    gap: 24px;
+    gap: 36px;
     justify-content: center;
     /* background-image: url(../img/background.webp); */
-    background-color: #F8C867;
-    border-top: 25px solid #F8C867;
-    border-bottom: 25px solid #F8C867;
-    padding: 50px 0px 50px 0px;
+    background-image: linear-gradient(to bottom, #F8C867, #FBDC9C);
+    padding: 75px 0px 75px 0px;
 }
 
 
@@ -225,6 +247,8 @@ main{
     background-color: #F7F7F7;
     padding: 75px 25px 150px 25px;
     transition-duration: 0.25s;
+    border-radius: 25px;
+    box-shadow: 0px 2px 8px #C5C5C5;
 }
 
 
@@ -252,11 +276,15 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    background-image: url(../img/background2.svg);
+    background-repeat: no-repeat;
 }
 
 
 .contacts h1{
     text-align: center;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
 }
 
 
@@ -265,6 +293,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     gap: 25px;
+    background-image: linear-gradient(to bottom right, #F8C867, #FBDC9C);
 }
 
 
@@ -272,10 +301,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: #F8C867;
     color: #604239;
-    /* padding: 10px 10px 10px 10px; */
-    box-shadow: 0px 2px 8px #C5C5C5;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
 }
 
 
@@ -316,11 +344,16 @@ main{
 }
 
 
+.contacts__left {
+    border: 1px white solid;
+    border-radius: 15px;
+}
+
+
 .contacts__block {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #F8C867;
     padding: 1em 0em 1em 0em;
 }
 
@@ -376,7 +409,79 @@ main{
 }
 
 
+footer {
+    background-color: #604239;
+    color: #F8C867;
+    margin-top: 10vh;
+    padding: 7vh 10vw 5vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
 
-@media screen {
-    
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+
+footer nav a {
+    color: #F8C867;
+    text-decoration: none;
+}
+
+
+.logo__text {
+    font-family: VIPROMAN-Regular;
+    font-weight: bolder;
+}
+
+
+footer nav a img{
+    width: 48px;
+}
+
+
+.footer__center {
+    text-align: center;
+}
+
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+
+    .header__menu nav ul{
+    display: block;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
 }

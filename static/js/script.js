@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $('.products_carousel').slick({
-        dots: true,           // Show dot indicators
-        arrows: true,         // Show next/prev arrows
-        infinite: true,       // Infinite looping
-        speed: 300,           // Transition speed
-        slidesToShow: 3,      // Number of slides to show
-        slidesToScroll: 1,    // Number of slides to scroll
-        autoplay: true,       // Auto-play
-        autoplaySpeed: 3000,  // Auto-play speed
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
 });

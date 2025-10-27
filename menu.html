@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Polle Profitrolle – Кондитерская Ижевска №1</title>
+	<link rel="stylesheet" href="static/css/style.css">
+
+
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+	<!-- jQuery + Slick JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
-    <header></header>
-    <main>
-        <!-- Include Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<header>
+		<div class="header__logo">
+			<a href="#">
+				<img src="static/img/logo.png" alt="logo">
+				<p class="logo__name">POLLE PROFITEROLLE</p>
+			</a>
+		</div>
+		<div class="header__menu">
+			<nav>
+				<ul>
+					<li><a href="#contacts">Мы на карте</a></li>
+					<li><a href="">Меню</a></li>
+					<li><a href="">Галерея</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-<div class="accordion" id="menuAccordion">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bakery">
-        Bakery
-      </button>
-    </h2>
-    <div id="bakery" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
-      <div class="accordion-body">
-        <ul>
-          <li>Bread</li>
-          <li>Croissants</li>
-          <li>Bagels</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cakes">
-        Cakes
-      </button>
-    </h2>
-    <div id="cakes" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
-      <div class="accordion-body">
-        <ul>
-          <li>Chocolate Cake</li>
-          <li>Cheesecake</li>
-          <li>Red Velvet</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+	<main>
+    <h1>Меню</h1>
+	</main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </main>
-    <footer></footer>
+	<footer>
+		<nav>
+			<div>
+				<a href="#" class="footer__logo">
+					<img src="static/img/logo-footer.png" alt="logo">
+					<p class="logo__text">POLLE PROFITEROLLE</p>
+				</a>
+			</div>
+			<div class="footer__nav">
+				<a href="#contacts">Мы на карте</a>
+				<a href="">Меню</a>
+				<a href="">Галерея</a>
+			</div>
+		</nav>
+		<div class="footer__center">
+			<p>ИП Астахова В.А. ОГРНИП 322183200025191 ИНН 183307568473</p>
+			<p>2025</p>
+		</div>
+		<div class="footer__right">
+			<p>УР Завьяловский р-н, д. Позимь д. 1н</p>
+			<p>Электронная почта: tortik.2022@list.ru</p>
+			<p>Телефон: 89292775443</p>
+		</div>
+	</footer>
+	<script src="static/js/script.js"></script>
 </body>
+
 </html>

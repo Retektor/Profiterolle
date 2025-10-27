@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 16px;
+    color: #00064D;
+}
+
+
+body {
+    font-family: Inter-Regular;
+}
+
+
+a {
+    color: #00064D;
+}
+
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Inter-Medium;
+    src: url(../fonts/Inter_18pt-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(../fonts/Inter_18pt-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: VIPROMAN-Regular;
+    src: url(../fonts/VIPRoman-Regular.otf);
+}
+
+
+
+/* Header */
+
+header{
+    height: 100px;
+    background-color: #FBDC9C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 150px;
+    font-family: Inter-Medium;
+}
+
+
+.header__logo a {
+    font-size: 1.75rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    font-family: VIPROMAN-Regular;
+    font-weight: bolder;
+}
+
+
+.header__logo a:hover {
+    color: #604239;
+}
+
+
+.header__logo a img{
+    width: 64px;
+    height: 64px;
+}
+
+
+
+.header__menu nav ul{
+    font-size: 1.25rem;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+
+.header__menu nav ul a{
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+
+.header__menu nav ul a:hover{
+    color: #604239;
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: #604239;
+    color: #F8C867;
+    margin-top: 10vh;
+    padding: 7vh 10vw 5vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+
+footer nav a {
+    color: #F8C867;
+    text-decoration: none;
+}
+
+
+.logo__text {
+    font-family: VIPROMAN-Regular;
+    font-weight: bolder;
+}
+
+
+footer nav a img{
+    width: 48px;
+}
+
+
+.footer__center {
+    text-align: center;
+}
+
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
