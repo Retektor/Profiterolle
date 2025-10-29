@@ -173,12 +173,13 @@ main{
 
 
 .products_carousel{
-    margin: 0px 150px 0px 150px;
+    margin: 0px auto;
+    width: 100%;
 }
 
 
 .products_carousel .slick-slide {
-    margin: 0 5px;
+    margin: 0 0.25vw;
 }
 
 
@@ -237,9 +238,8 @@ main{
     display: flex;
     gap: 36px;
     justify-content: center;
-    /* background-image: url(../img/background.webp); */
     background-image: linear-gradient(to bottom, #F8C867, #FBDC9C);
-    padding: 75px 0px 75px 0px;
+    padding: 75px 13vw 75px 13vw;
 }
 
 
@@ -259,7 +259,7 @@ main{
 
 .about__card div p{
     margin-top: 10px;
-    width: 400px;
+    width: auto;
 }
 
 
@@ -338,9 +338,10 @@ main{
 
 
 .contacts__content {
-    margin: 0px 150px 0px 150px;
+    margin: 0px 13vw 0px 13vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -473,15 +474,54 @@ footer nav a img{
 
 
 @media (max-width: 768px) {
+    html {
+        width: 100%;
+    }
+
     header{
         flex-direction: column;
     }
+
 
     .header__menu nav ul{
     display: block;
     }
 
+
     .intro {
+        flex-direction: column;
+    }
+
+
+    .intro__text {
+        width: 100%;
+    }
+
+
+    .products_carousel{
+        margin: 0vh 2vw 0vh 2vw;
+    }
+    
+
+    .products_carousel div img {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+
+    .about__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .about__card {
+        width: 80%;
+    }
+
+
+    .contacts__content {
         flex-direction: column;
     }
 }
