@@ -116,6 +116,7 @@ main{
     padding: 15vh 7.5vw 30vh 7.5vw;
     display: flex;
     justify-content: space-between;
+    gap: 3vw;
 }
 
 
@@ -152,8 +153,14 @@ main{
 }
 
 
+.intro__image{
+    width: 100%;
+}
+
+
 .intro__image img {
-    width: 43vw;
+    width: 100%;
+    height: auto;
 }
 
 /* Products */
@@ -161,7 +168,8 @@ main{
 .products {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    gap: 5vh;
 }
 
 
@@ -174,12 +182,12 @@ main{
 
 .products_carousel{
     margin: 0px auto;
-    width: 100%;
+    width: 90%;
 }
 
 
 .products_carousel .slick-slide {
-    margin: 0 0.25vw;
+    margin: 0 0.5vw;
 }
 
 
@@ -195,7 +203,7 @@ main{
 
 
 .products_carousel div img {
-    width: 523px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -239,13 +247,13 @@ main{
     gap: 36px;
     justify-content: center;
     background-image: linear-gradient(to bottom, #F8C867, #FBDC9C);
-    padding: 75px 13vw 75px 13vw;
+    padding: 4vw 13vw 4vw 13vw;
 }
 
 
 .about__card {
     background-color: #F7F7F7;
-    padding: 75px 25px 150px 25px;
+    padding: 4vw 1.5vw 150px 1.5vw;
     transition-duration: 0.25s;
     border-radius: 25px;
     box-shadow: 0px 2px 8px #C5C5C5;
@@ -341,7 +349,8 @@ main{
     margin: 0px 13vw 0px 13vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 5vw;
+    align-items: flex-start;
 }
 
 
@@ -402,11 +411,18 @@ main{
 
 
 .reviews {
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
+}
+
+
+.reviews-iframe {
+    width: 700px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -415,6 +431,13 @@ footer {
     color: #F8C867;
     margin-top: 10vh;
     padding: 7vh 10vw 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+.footer__top{
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -460,7 +483,7 @@ footer nav a img{
 }
 
 
-.footer__center {
+.footer__bottom {
     text-align: center;
 }
 
@@ -478,22 +501,36 @@ footer nav a img{
         width: 100%;
     }
 
+
+    main{
+    gap: 10vh;
+}
+
+
     header{
         flex-direction: column;
+        gap: 2.5vh;
     }
 
 
     .header__menu nav ul{
-    display: block;
+        flex-direction: column;
+        gap: 0.75vh;
     }
 
 
     .intro {
         flex-direction: column;
+        gap: 5vh;
     }
 
 
     .intro__text {
+        width: 100%;
+    }
+
+
+    .intro__image {
         width: 100%;
     }
 
@@ -513,15 +550,45 @@ footer nav a img{
     .about__cards {
         flex-direction: column;
         align-items: center;
+        padding: 5vh 0vw 5vh 0vw;
     }
 
 
     .about__card {
+        padding: 4vh 3vw 4vh 3vw;
         width: 80%;
     }
 
 
+    .contacts div{
+        gap: 5vh;
+    }
+
     .contacts__content {
         flex-direction: column;
+    }
+
+
+    .yandex-map {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .reviews-iframe {
+        width: 95%;
+    }
+
+
+    footer {
+        flex-direction: column;
+        padding: 7vh 3vw 5vh 3vw;
+    }
+
+
+    .footer__top {
+        flex-direction: column;
+        gap: 5vh;
+        align-items: center;
     }
 }
