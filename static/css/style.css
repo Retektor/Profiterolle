@@ -116,7 +116,7 @@ main{
     padding: 15vh 7.5vw 30vh 7.5vw;
     display: flex;
     justify-content: space-between;
-    gap: 3vw;
+    gap: 10vw;
 }
 
 
@@ -187,7 +187,7 @@ main{
 
 
 .products_carousel .slick-slide {
-    margin: 0 0.5vw;
+    margin: 0 1vw;
 }
 
 
