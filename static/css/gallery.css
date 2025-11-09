@@ -115,7 +115,7 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     row-gap: 1vh;
     column-gap: 1vw;
 }
@@ -197,7 +197,7 @@ footer nav a img{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     html {
         width: 100%;
     }
